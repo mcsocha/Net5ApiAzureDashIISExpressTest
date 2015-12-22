@@ -3,7 +3,6 @@
   "compilationOptions": {
     "emitEntryPoint": true
   },
-
   "dependencies": {
     "Microsoft.AspNet.IISPlatformHandler": "1.0.0-rc1-final",
     "Microsoft.AspNet.Mvc": "6.0.0-rc1-final",
@@ -21,7 +20,7 @@
   },
 
   "frameworks": {
-    "dnx451": { },
+    "dnx46": { },
     "dnxcore50": { }
   },
 

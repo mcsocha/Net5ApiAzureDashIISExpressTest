@@ -8,8 +8,8 @@
   <PropertyGroup Label="Globals">
     <ProjectGuid>f8633a41-aadc-4f8a-b199-11c60a8ad3bf</ProjectGuid>
     <RootNamespace>AzureDashIISExpressTest</RootNamespace>
-    <BaseIntermediateOutputPath Condition="'$(BaseIntermediateOutputPath)'=='' ">..\artifacts\obj\$(MSBuildProjectName)</BaseIntermediateOutputPath>
-    <OutputPath Condition="'$(OutputPath)'=='' ">..\artifacts\bin\$(MSBuildProjectName)\</OutputPath>
+    <BaseIntermediateOutputPath Condition="'$(BaseIntermediateOutputPath)'=='' ">obj\$(Configuration)</BaseIntermediateOutputPath>
+    <OutputPath Condition="'$(OutputPath)'=='' ">bin\$(Configuration)</OutputPath>
   </PropertyGroup>
   <PropertyGroup>
     <SchemaVersion>2.0</SchemaVersion>
