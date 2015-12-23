@@ -12,18 +12,15 @@
     "Microsoft.Extensions.Configuration.Json": "1.0.0-rc1-final",
     "Microsoft.Extensions.Logging": "1.0.0-rc1-final",
     "Microsoft.Extensions.Logging.Console": "1.0.0-rc1-final",
-    "Microsoft.Extensions.Logging.Debug": "1.0.0-rc1-final"
+    "Microsoft.Extensions.Logging.Debug": "1.0.0-rc1-final"      
   },
-
   "commands": {
     "web": "Microsoft.AspNet.Server.Kestrel"
   },
-
   "frameworks": {
     "dnx46": { },
     "dnxcore50": { }
   },
-
   "exclude": [
     "wwwroot",
     "node_modules"
@@ -31,5 +28,9 @@
   "publishExclude": [
     "**.user",
     "**.vspscc"
-  ]
+  ],
+  "configurations": {
+    "Dev": { },
+    "Local": { }
+  }
 }

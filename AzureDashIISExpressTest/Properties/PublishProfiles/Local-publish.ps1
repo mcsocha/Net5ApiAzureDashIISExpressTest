@@ -2,7 +2,7 @@
 param($publishProperties, $packOutput, $nugetUrl)
 
 # to learn more about this file visit http://go.microsoft.com/fwlink/?LinkId=524327
-$publishModuleVersion = '1.0.1'
+$publishModuleVersion = '1.0.2-beta2'
 function Get-VisualStudio2015InstallPath{
     [cmdletbinding()]
     param()
@@ -95,6 +95,7 @@ try{
     'Calling Publish-AspNet' | Write-Verbose
     # call Publish-AspNet to perform the publish operation
     Publish-AspNet -publishProperties $publishProperties -packOutput $packOutput
+
 }
 catch{
     "An error occurred during publish.`n{0}" -f $_.Exception.Message | Write-Error

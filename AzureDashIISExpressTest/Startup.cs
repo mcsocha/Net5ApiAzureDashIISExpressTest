@@ -7,6 +7,8 @@ using Microsoft.AspNet.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
+using Microsoft.AspNet.StaticFiles;
+using Microsoft.AspNet.StaticFiles.Infrastructure;
 
 namespace AzureDashIISExpressTest
 {
@@ -38,6 +40,7 @@ namespace AzureDashIISExpressTest
 
             app.UseIISPlatformHandler();
             app.UseStaticFiles();
+            app.UseDefaultFiles(new DefaultFilesOptions { DefaultFileNames = new[] { "index.html", "index.htm", "default.aspx" } });
             app.UseMvc();
         }
 

@@ -11,16 +11,20 @@
     "IIS Express": {
       "commandName": "IISExpress",
       "launchBrowser": true,
-      "launchUrl": "api/values",
+      "launchUrl": "index.html",
       "environmentVariables": {
         "Hosting:Environment": "Development"
-      }
+      },
+      "sdkVersion": "dnx-clr-win-x86.1.0.0-rc1-final"
     },
     "web": {
       "commandName": "web",
+      "launchBrowser": true,
+      "launchUrl": "http://localhost:5000",
       "environmentVariables": {
         "Hosting:Environment": "Development"
-      }
+      },
+      "sdkVersion": "dnx-clr-win-x86.1.0.0-rc1-final"
     }
   }
 }
